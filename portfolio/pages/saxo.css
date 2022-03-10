@@ -1,0 +1,133 @@
+body{
+  background-image: url(../ressources/images/sax.jpg);
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  margin-left: 0vh;
+  margin-top: 140;
+  z-index: 40;
+}
+header{
+  margin-top:0px;
+  height: 130;
+  padding: 0vh;
+  z-index: 10;
+}
+
+.titre{
+margin-top: 0vh;
+}
+
+h1{
+  background-image: url(../ressources/images/sax.jpg);
+  background-attachment: fixed; 
+  background-position: 100% 100%;
+  height: 40px;
+  width: 100%;
+  padding: 0vh;
+  z-index: 10;
+}
+
+h1{
+  text-shadow: -1px -1px 1px rgb(255, 255, 255), 1px 1px 1px rgba(252, 250, 250, 0.5), 24px 13px 6px rgba(218, 42, 42, 0.18), 24px 13px 6px rgba(0,0,0,0.18), 24px 13px 6px rgba(0,0,0,0.18);
+  background-attachment: fixed;
+  text-align: center;
+  position: fixed;
+  font-size: 40px;
+  width: 100%;
+  height: 70px;
+  margin-top: 0vh;
+}
+/*.gb{
+  margin-top: 0vh;
+}*/
+
+body { 
+  margin:0px; 
+}
+
+header { 
+  border:1px black solid; /* cette solution a fonctionner de suite pour supprimer la marge d'en */
+}
+
+audio{
+  margin-top: 40px;
+}
+
+.objet1{
+  position:relative;
+  width: auto;
+  height: auto;
+  margin:0px;
+}
+
+.musd{
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  border: 2px solid red;
+  text-align: right;
+  z-index: 11;
+}
+
+.objet2{
+  position:relative;
+  width: auto;
+  height: auto;
+  margin:0px;
+}
+
+.musg{
+  position:fixed;
+  top: 0px;
+  right:50%;
+  width:50%;
+  height: auto;
+  border: 2px solid blue;
+  text-align: left;
+  z-index: 11;
+}
+
+iframe{
+  display: block;
+  position: center;
+  margin: auto;
+}
+
+.absolute{
+  position:relative;
+  width: auto;
+  height: auto;
+  margin:0px;
+}
+
+.bloc1{
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  border: 2px solid blue;
+}
+
+.bloc2{
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  border: 2px solid green;
+}
+
+.bloc3{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  border: 2px solid red;
+  text-align: center;
+}
+
+.pi{
+  z-index: -10;
+}
