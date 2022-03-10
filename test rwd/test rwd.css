@@ -1,0 +1,47 @@
+
+html{
+  top: 0;
+}
+
+body{
+  margin
+:0;
+}
+
+header{
+
+}
+
+body > header {
+  height: 100vh;
+  background-image: url(bgs.jpg);
+  display : flex; 
+  background-position: bottom 20% left 50%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+h1{
+  color:rgb(255, 255, 255);
+  background-color:rgba(0,0,0,0.4);
+  padding:0.5em;
+}
+
+@media screen and (min-width: 800px){
+  body > header {
+    background-image: url(bgs.jpg);
+    align-items: 15%;
+    justify-content: flex-start;
+  
+  }
+    h1{
+      color: red;
+      margin-left: 25%;
+    }
+    }
+    
+  
+}
