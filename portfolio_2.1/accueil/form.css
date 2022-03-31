@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2? family= Mochiy+Pop+P+One & family= Roboto+Mono & family= Supermercado+One & display=swap');
+
+
+
+body{
+  background-color: rgb(228, 228, 228);
+  font-family:  'Mochiy Pop P One', sans empattement ;
+  font-family : 'Roboto Mono', espace fixe ;
+  font-family : 'Supermercado One', cursive ;
+}
+
+h1{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 2.7em;
+}
+
+h2{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+
+}
+
+button{
+  text-align: center;
+  margin-bottom:40px;
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px black;
+  max-width: 1100px;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;;
+}
+
+.form2{
+  max-width: 90%;
+}
+
+.dim{
+  margin-top: 10px;
+  text-align: end;
+  transition: all 150ms;
+}
+
+label{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+}
+
+
+input{
+  margin-right: 70px;
+  transition: all 500ms;
+} 
+
+
+input:hover{
+  background-color: lightblue;
+  transition: all 0.5s;
+
+}
+
+button:hover{
+  width: 10em;
+  box-shadow: 1px 1px 100px blue;
+  transition: all 1s;
+}
+
+img{
+  max-width: 90%;
+  margin-top:auto;
+  margin-bottom: auto;
+  box-shadow: 17px 20px 20px 2px #4b4b4b87;
+}
+
+
+footer{
+  position: fixed;
+  bottom:0px;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+}
+
+
+/*********************************rwd*******************************/
+@media screen and ( min-width: 650px ){
+  .form{
+    flex-direction: row;
+    font-size:2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+    height: 100%;
+
+  }
+  .img{
+    width: 40%;
+    padding-bottom: auto;
+  }
+}
+
+@media screen and( min-width: 1000px) {
+  .form2{
+    font-size: 2.2em;
+  }
+}
