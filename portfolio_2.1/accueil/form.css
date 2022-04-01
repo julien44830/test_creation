@@ -77,6 +77,9 @@ img{
   margin-top:auto;
   margin-bottom: auto;
   box-shadow: 17px 20px 20px 2px #4b4b4b87;
+  animation-name: img;
+  animation: 0.2s ease-in-out 0s infinite alternate img ;
+
 }
 
 
@@ -99,12 +102,10 @@ footer{
 
   img{
     height: 100%;
-
   }
   .img{
     width: 40%;
     padding-bottom: auto;
-    animation-name: img;
   }
 }
 
@@ -117,11 +118,11 @@ footer{
 /***********************animation*********************/  
 
 @keyframes img{
-  0%{
-    transform: rotate(-20°)
+  from{
+    transform: rotate(-15deg);
   }
 
-  100%{
-    transform: rotate(20°)
+  to{
+    transform: rotate(15deg);
   }
 }
