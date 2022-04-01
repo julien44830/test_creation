@@ -23,13 +23,21 @@ nav{
 }
 
 nav > a {
+  padding: 5px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.677);
+  border-right: 1px solid rgb(156, 156, 156);
+  border-bottom: 1px solid rgb(156, 156, 156);
+  transition: all 1.5s;
+
+
 }
 
 a:hover{
   color:rgb(255, 255, 255);
   text-shadow: 0px 1px 8px white;
+  border-color: white;
+  transition: all 150ms;
 }
 
 
