@@ -7,6 +7,9 @@ body{
   font-family:  'Mochiy Pop P One', sans empattement ;
   font-family : 'Roboto Mono', espace fixe ;
   font-family : 'Supermercado One', cursive ;
+  margin-bottom: 100px;
+  animation: 2s ease-out 0s  alternate form ;
+
 }
 
 h1{
@@ -26,6 +29,9 @@ button{
   margin-bottom:40px;
   transition: all 1s;
   transition-delay: 1s;
+  margin-top: 20px;
+  text-transform: uppercase;
+
 }
 
 
@@ -37,11 +43,13 @@ button{
   width: 90vw;
   margin: auto;
   text-align: center;
-  font-size: 1em;;
+  font-size: 1em;
+
 }
 
 .form2{
   max-width: 90%;
+  animation: 1s ease-in-out 0s  alternate form2 ;
 }
 
 .dim{
@@ -74,12 +82,28 @@ button:hover{
 }
 
 img{
+  border: 0.5px solid lightgrey;
   margin-top:auto;
   margin-bottom: auto;
   box-shadow: 17px 20px 20px 2px #4b4b4b87;
-  animation-name: img;
-  animation: 0.2s ease-in-out 0s infinite alternate img ;
+  animation-delay: 1.7s;
+  animation: 2s ease-out 0s  alternate image ;
+}
 
+.img{
+  animation: 1s ease-in-out 0s infinite alternate img ;
+  animation-delay: 2s;
+
+}
+
+.p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size:0.2em;
+  margin-top: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 
@@ -107,6 +131,11 @@ footer{
     width: 40%;
     padding-bottom: auto;
   }
+  .p{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right:auto;
+  }
 }
 
 @media screen and( min-width: 1000px) {
@@ -116,6 +145,35 @@ footer{
 }
 
 /***********************animation*********************/  
+@keyframes form2{
+  0%{
+  transform: translateX(-1000px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes image{
+  0%{
+  transform: translateX(+1000px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes form{
+  0%{
+  font-size: 0em;
+  background-color: black;
+  }
+  100%{
+    font-size: 1em;
+  }
+}
 
 @keyframes img{
   from{
