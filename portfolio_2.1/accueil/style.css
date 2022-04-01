@@ -66,6 +66,12 @@ body > header > nav > ul > li > a {
 .title {
   width: 100vw;
 }
+
+.redirection{
+  text-decoration: none;
+  
+}
+
 h1 {
   height: 200px;
   font-size: 2rem;
@@ -103,7 +109,7 @@ h2 {
 
 }
 
-p{
+.p{
   padding:20px;
   text-align: justify;
   background-color: rgba(117, 117, 117, 0.5);
@@ -194,9 +200,6 @@ article{
 
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
 /*zoom au survole de la sourie*/
 a.music2:hover{
   color: black;
@@ -211,13 +214,6 @@ a {
   transition: all 450ms;
 }
   
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-
-
-
-
 .boit2{ 
   width:80%;
   text-align:center;
@@ -336,7 +332,7 @@ color:white;
     font-size:4em;
   }
 
-    p{
+    .p{
       margin-right: 10%;
       margin-left: 10%;
       max-width: 1000px;
@@ -390,10 +386,7 @@ color:white;
   }
 }
 
-
-
-
-  /*bouton pour remonter en haut de la page*/
+/*bouton pour remonter en haut de la page*/
 .up{
   position: fixed;
   bottom: 30px;
