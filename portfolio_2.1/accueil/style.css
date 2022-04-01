@@ -66,6 +66,12 @@ body > header > nav > ul > li > a {
 .title {
   width: 100vw;
 }
+
+.redirection{
+  text-decoration: none;
+  
+}
+
 h1 {
   height: 200px;
   font-size: 2rem;
@@ -326,7 +332,7 @@ color:white;
     font-size:4em;
   }
 
-    p{
+    .p{
       margin-right: 10%;
       margin-left: 10%;
       max-width: 1000px;
