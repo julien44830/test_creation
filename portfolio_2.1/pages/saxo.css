@@ -31,7 +31,7 @@ p,.histoir{
   text-align: justify;
 }
 
-.player{
+.player, .player2{
   text-align: center;
   margin-top: 5em;
 }
@@ -56,6 +56,7 @@ img{
 
 .retourn{
   position: fixed;
+  bottom: 0px;
 }
 
 
@@ -90,7 +91,6 @@ img{
   /*les images*/
   .art{
     max-width: 1100px;
-    width: 80vw;
     display: flex;
     flex-direction:row;
     border: 1px solid green;
@@ -104,10 +104,51 @@ img{
   width: 90%;
   margin-left:5%;
   margin-right: 5%;
+  max-height: 33%;
   }
   
   img{
     width: 100%;
   }
   
+}
+
+@media screen and (min-width:1000px){
+  .media{
+    display: grid;
+    grid-template-areas: /*créer une 3 ieme colonne pour mettre les images sur 2 colonnes*/
+    "art player1"
+    "art player2";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    background-color: aquamarine;
+    border: 1px solid red;
+    height: 70vh;
+  }
+  
+  .art{
+    width: 100%;
+    margin-left:0px;
+    grid-area: art;
+    flex-direction: column;
+  }
+
+  .img{
+    height: 100%;
+  }
+
+  .player{
+  grid-area: player1;  
+  width: 80%;
+  }
+  
+  .player2{
+  grid-area: player2;
+  }
+  
+  audio{
+    font-size:0.1em;
+    width: 100px;
+  }
+
 }
