@@ -1,8 +1,14 @@
+/*******************mobil first********************/
+
+
 body{
   background-color: lightgrey;
+  margin: 0px;
 }
 
 h1{
+  text-underline-offset: 0.3em;
+  text-decoration: underline overline 1px grey;
   padding: 10% 00% 10% 00%;
   font-size: 2.2rem;
   margin-top: 50px;
@@ -16,7 +22,7 @@ h2{
   font-size: 1.4em;
 }
 
-p ,.histoir{
+p,.histoir{
 
   font-family: cursive;
   font-weight: 700;
@@ -25,24 +31,124 @@ p ,.histoir{
   text-align: justify;
 }
 
-.player{
+.player, .player2{
   text-align: center;
   margin-top: 5em;
 }
 
+.art{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding:5%;
+  margin:auto;
+}
+
+.img{
+font-size:100%;
+margin-top: 2em;
+}
+
+img{
+  width: 100%;
+}
+
 .retourn{
   position: fixed;
+  bottom: 0px;
 }
+
+
 /*****************************RWD***************************/
 
-@media screen and( min-width: 600px )
- {
+@media screen and (min-width: 600px){
   body{
-    background-color: red;   
+    margin-left: 10%;
+    margin-right:10%;
   }
-
-  h1{
-    color:blue;
+    h1{
+    font-size: 4em;
   }
   
+  h2{
+    margin-left: 3em;
+    font-size: 2em;
+  }
+
+  p{
+    margin-top: 3em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+  }
+
+  .p{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+
+  /*les images*/
+  .art{
+    max-width: 1100px;
+    display: flex;
+    flex-direction:row;
+    border: 1px solid green;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .img{
+  border: 1px solid black;
+  width: 90%;
+  margin-left:5%;
+  margin-right: 5%;
+  max-height: 33%;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width:1000px){
+  .media{
+    display: grid;
+    grid-template-areas: /*créer une 3 ieme colonne pour mettre les images sur 2 colonnes*/
+    "art player1"
+    "art player2";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    background-color: aquamarine;
+    border: 1px solid red;
+    height: 70vh;
+  }
+  
+  .art{
+    width: 100%;
+    margin-left:0px;
+    grid-area: art;
+    flex-direction: column;
+  }
+
+  .img{
+    height: 100%;
+  }
+
+  .player{
+  grid-area: player1;  
+  width: 80%;
+  }
+  
+  .player2{
+  grid-area: player2;
+  }
+  
+  audio{
+    font-size:0.1em;
+    width: 100px;
+  }
+
 }
