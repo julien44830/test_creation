@@ -57,12 +57,58 @@ body{
 
 h1{
   text-underline-offset: 0.3em;
-  text-decoration: underline overline 1px grey;
+  text-decoration:  overline 1px grey;
   padding: 10% 00% 10% 00%;
   font-size: 2.2rem;
   margin-top: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+/*test animation*/
+h1:hover{
+  color:blue;
+  animation: 5s ease-in-out tremble;
+}
+
+@keyframes tremble{
+  0%{
+    transform: rotate(-15deg);
+  }
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  30%{
+    transform: rotate(15deg);
+
+  }
+  40%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(15deg);
+
+  }
+  60%{
+    transform: rotate(-15deg);
+  }
+  70%{
+    transform: rotate(15deg);
+
+  }
+  80%{
+    transform: rotate(-15deg);
+  }
+  90%{
+    transform: rotate(15deg);
+
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+
 }
 
 h2{
