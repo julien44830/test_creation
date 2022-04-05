@@ -11,9 +11,10 @@ h1{
   }
 
 body{
-  background-image: url(../ressources/images/backinfo.png);
-  background-size: 1920px 1080px;
+  background-image: url(../ressources/images/code.jpg);
   background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
   margin-left: 0px;
   margin-top: 0px;
   font-family: 'Mochiy Pop P One', sans-serif;
