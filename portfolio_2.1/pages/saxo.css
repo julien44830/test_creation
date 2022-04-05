@@ -13,7 +13,7 @@ nav{
 }
 
 nav > ul {
-text-align: end;
+  text-align: end;
 }
 
 nav > ul > li{
@@ -64,51 +64,6 @@ h1{
   text-align: center;
   text-transform: uppercase;
 }
-/*test animation*/
-h1:hover{
-  animation: 5s ease-in-out tremble;
-}
-
-@keyframes tremble{
-  0%{
-    transform: rotate(-15deg);
-  }
-  10%{
-    transform: rotate(15deg);
-  }
-  20%{
-    transform: rotate(-15deg);
-  }
-  30%{
-    transform: rotate(15deg);
-
-  }
-  40%{
-    transform: rotate(-15deg);
-  }
-  50%{
-    transform: rotate(15deg);
-
-  }
-  60%{
-    transform: rotate(-15deg);
-  }
-  70%{
-    transform: rotate(15deg);
-
-  }
-  80%{
-    transform: rotate(-15deg);
-  }
-  90%{
-    transform: rotate(15deg);
-
-  }
-  100%{
-    transform: rotate(-15deg);
-  }
-
-}
 
 h2{
   text-decoration: underline;
@@ -140,8 +95,8 @@ p,.histoir{
 }
 
 .img{
-font-size:100%;
-margin-top: 2em;
+  font-size:100%;
+  margin-top: 2em;
 }
 
 img{
@@ -173,11 +128,12 @@ footer > span, a{
   transition: all 500ms;
 }
 
-footer > span:hover , a:hover{
- /* transition: all 150ms;*/
+footer > span > a:hover{
+  /* transition: all 150ms;*/
   color: blanchedalmond;
   text-shadow: 0px 0px 6px blanchedalmond;
 }
+
 /*****************************RWD***************************/
 
 @media screen and (min-width: 600px){
