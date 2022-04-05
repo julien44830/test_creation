@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Mono&family=Supermercado+One&display=swap');
 
-/*menu de navigation*/
+body{
+  text-align: center;
+  margin:0px;
+  margin-top: 80px;
+}
+/*smenu de navigation*/
 nav{
   position:fixed;
   top: 0px;
@@ -8,7 +13,6 @@ nav{
   height: 50px;
   font-size: 0.9em;
   background-color: grey;
-  left:0px;
   animation: 0.4s ease-in-out  menu;
 }
 
@@ -49,63 +53,29 @@ nav > ul > li > a:active{
   }
   /*fin du menu de navigation*/
 
-h1{
-    height: 110px;
-  width: 100%;
-  }
-
-body{
-  background-image: url(../ressources/images/code.jpg);
-  background-attachment: fixed;
-  background-size: 100vh;
-  background-repeat: no-repeat;
-  margin-left: 0px;
-  margin-top: 0px;
-  font-family: 'Mochiy Pop P One', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Supermercado One', cursive;
+img{
+  width: 90vw;
 }
 
-h1{
-  text-shadow: -1px -1px 1px rgb(255, 255, 255), 1px 1px 1px rgba(0,0,0,.5), 24px 13px 6px rgba(0,0,0,0.18), 24px 13px 6px rgba(0,0,0,0.18), 24px 13px 6px rgba(0,0,0,0.18);
-  text-align: center;
+.pdf{
+  width: 90vw;
+}
+
+/*       peid de page       */
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(51, 51, 51, 0.756);
   position: fixed;
-  font-size: 40px;
+  bottom:0px;
   width: 100%;
-  margin-top: 0px;
+  color: white;
+  font-size: 0.9em;
 }
 
-.vboite{
-  display: block;
-  margin-left:  auto;
-  margin-right: auto ;  /* une boite dans la boite pour centrer la video*/
-  text-align: center;
-
+footer > span, a{
+  text-decoration: none;
+  color: white;
+  transition: all 500ms;
 }
-
-.video{
-  margin-top: 120px; /* pour ne pas passer derrière le header*/
-}
-
-  p{
-  text-align: center;
-  color: bisque;
-  width: 100%;
-  margin-left:0px auto;
-}
-
-
- img {
-  display: block;
-  margin-left:  auto;  /*ne fonctionne pas*/
-  margin-right: auto ;
-  max-width: 600px;
-  max-height:  auto;
- }
-
- object{
-   display: block;
-   margin-left:  auto;/* fonctionne */
-   margin-right: auto ;
- 
- }
