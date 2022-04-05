@@ -39,19 +39,17 @@ body > header > nav > ul{
   justify-content:space-evenly;
   padding-left: 0px;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-body > header > nav > ul > li {/*a> a ete rajoute*/
+
+body > header > nav > ul > li {
   display: inline;
   border: 1px solid black;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.25);
   font-size: 0.6em;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
-/*zoom au survole de la sourie*/
 body > header > nav > ul > li:hover {
+/*zoom au survole de la sourie*/
   transition: all 150ms;
   background-color: rgba(255, 255, 255, 0.774);
   color: black;
@@ -69,8 +67,7 @@ body > header > nav > ul > li > a {
 
 .redirection{
   text-decoration: none;
-  
-}
+  }
 
 h1 {
   height: 200px;
@@ -106,7 +103,6 @@ h2 {
   border-radius: 30%;
   padding:30px;
   top: 100px;
-
 }
 
 .p{
@@ -122,25 +118,20 @@ body>main>div.loisir>.grid>.er>p{
   font-size:0.5em;
 }
 
-
-
-
 main{
   display:flex;
   flex-direction: column;
   z-index:0;
 }
 
-.section{/*attention*/
+.section{
   margin-top:4em;
   max-width: 1100px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-
 }
-
 
 /*boite des photo*/
 article{
@@ -197,11 +188,9 @@ article{
 
 .music:hover{
   background-color: rgba(255, 255, 255, 0.301);
-
 }
 
-/*zoom au survole de la sourie*/
-a.music2:hover{
+a.music2:hover{/*zoom au survole de la sourie*/
   color: black;
   background-color: rgba(255, 255, 255, 0.301);
 }
@@ -265,7 +254,6 @@ a{
   text-decoration: none;
 }
 
-
 .LienMusic{
   display: flex;
   flex-direction: column;
@@ -273,7 +261,6 @@ a{
 }
 
 /*       peid de page       */
-
 footer{
   display: flex;
   justify-content: space-around;
@@ -286,12 +273,11 @@ footer{
 }
 
 footer>span ,a{
-text-decoration: none;
-color:white;
+  text-decoration: none;
+  color:white;
 }
 
 /*les annimation*/
-
 @keyframes h2{
   0%{
       font-size:0em;
@@ -303,7 +289,6 @@ color:white;
 }
 
 
-/*animation du titre portefolio !!!animation qui redimentionne la largeur de la page!!!*/
  @keyframes h1{
     0%{
       text-shadow: 5px 0px 5px rgb(255, 255, 255);  
@@ -332,20 +317,17 @@ color:white;
     font-size:4em;
   }
 
-    .p{
-      margin-right: 10%;
-      margin-left: 10%;
-      max-width: 1000px;
-    }
-
-    
-  .up>a>img{
-  width: 65px;
-  height: auto;
+  .p{
+    margin-right: 10%;
+    margin-left: 10%;
+    max-width: 1000px;
   }
-  
-  /*.grid{/*grille ici*/
-  
+
+  .up>a>img{
+    width: 65px;
+    height: auto;
+  }
+   
   .text{
     display:flex;
     width:100%;
@@ -364,9 +346,7 @@ color:white;
     }
   main{
     align-content: center;
-  }
-
-    
+  }    
 }
 
 @media screen and (min-width:1200px) {
@@ -386,8 +366,7 @@ color:white;
   }
 }
 
-/*bouton pour remonter en haut de la page*/
-.up{
+.up{/*bouton pour remonter en haut de la page*/
   position: fixed;
   bottom: 30px;
   right: 20px;
