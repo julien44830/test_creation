@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Mono&family=Supermercado+One&display=swap');
 
 body{
+  width: 100vw;
   text-align: center;
   margin:0px;
   margin-top: 80px;
+  background-color: rgb(78, 100, 146);
 }
 /*smenu de navigation*/
 nav{
@@ -17,12 +19,15 @@ nav{
 }
 
 nav > ul {
+  padding: 0px;
+  width:100%;
   text-align: center;
 }
 
 nav > ul > li{
   display: inline;
-  padding-right: 1em;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 nav > ul > li > a {
@@ -50,15 +55,20 @@ nav > ul > li > a:active{
     100%{
      
     }
-  }
+}
   /*fin du menu de navigation*/
+
+h1{
+  text-transform: uppercase;
+  font-size: 2em;
+  color: rgb(150, 150, 235);
+}
 
 img{
   width: 90vw;
 }
 
 .pdf{
-  width: 90vw;
 }
 
 /*       peid de page       */
@@ -72,10 +82,19 @@ footer{
   width: 100%;
   color: white;
   font-size: 0.9em;
+  margin-bottom: 0px;
 }
 
 footer > span, a{
   text-decoration: none;
   color: white;
   transition: all 500ms;
+}
+
+@media screen and (min-width: 600px) {
+  nav > ul {
+    text-align: right;
+  }
+  
+  
 }
