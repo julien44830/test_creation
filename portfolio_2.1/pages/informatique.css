@@ -58,8 +58,7 @@ nav > ul > li > a:active{
   /*fin du menu de navigation*/
 
 .h1{
-  height: 30vh;
-  margin-top: 50%;
+  margin-top: 150px;
 }
 
 h1{
@@ -70,8 +69,8 @@ h1{
 }
 
 .p{
+  margin-top: 30%;
   padding: 2%;
-  margin:2%;
   margin-right: 2%;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -95,6 +94,7 @@ p{
 }
 
 .img{
+  padding: 5px;
   margin: auto;
   width: 90%;
   border-right: 1px solid black;
@@ -115,6 +115,8 @@ img{
 .video{
   margin-top: 10%;
   width:90%;
+  padding: 5px;
+
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0px 0px 10px 0px;
@@ -133,13 +135,14 @@ video{
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-  width: 39%; 
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0px 0px 10px 0px;
   -webkit-box-shadow: 15px 20px 13px 0px rgba(0,0,0,0.64); 
   box-shadow: 15px 20px 13px 0px rgba(0,0,0,0.64);
 }
+
+
 
 /*       peid de page       */
 
@@ -167,5 +170,16 @@ footer > span, a{
     text-align: right;
   }
   
-  
+  body{
+    text-align: initial;
+  }
+h1{
+  font-size: 3em;
+  margin-left:50px;
+  margin-top: 50%;
+}
+
+  p{
+    font-size:3em;
+  }
 }
