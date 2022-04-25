@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2? family= Mochiy+Pop+P+One & family= Roboto+Mono & family= Supermercado+One & display=swap');
+
+
+
+body{
+  margin: 0px;
+  margin-top:30px;
+  background-color: rgb(228, 228, 228);
+  font-family:  'Mochiy Pop P One', sans empattement ;
+  font-family : 'Roboto Mono', espace fixe ;
+  font-family : 'Supermercado One', cursive ;
+  margin-bottom: 100px;
+  animation: 2s ease-out 0s  alternate form ;
+}
+
+nav{
+  height: 31px;
+  background-color: grey;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align:center;
+}
+
+nav > a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.677);
+  border-right: 1px solid rgb(156, 156, 156);
+  border-bottom: 1px solid rgb(156, 156, 156);
+  transition: all 1.5s;
+
+
+}
+
+a:hover{
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 1px 8px white;
+  border-color: white;
+  transition: all 150ms;
+}
+
+h1{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 2.7em;
+}
+
+h2{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+
+}
+
+button{
+  text-align: center;
+  margin-bottom:40px;
+  transition: all 1s;
+  transition-delay: 1s;
+  margin-top: 20px;
+  text-transform: uppercase;
+
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px black;
+  max-width: 1100px;
+  width: vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+.form2{
+  max-width: 90%;
+  animation: 1s ease-in-out 0s  alternate form2 ;
+}
+
+.dim{
+  margin-top: 10px;
+  text-align: end;
+  transition: all 150ms;
+}
+
+label{
+  text-shadow: 16px 17px 10px rgb(190 190 190);
+}
+
+
+input{
+  margin-right: 70px;
+  transition: all 500ms;
+} 
+
+
+input:hover{
+  background-color: lightblue;
+  transition: all 0.5s;
+
+}
+
+button:hover{
+  width: 10em;
+  box-shadow: 1px 1px 100px blue;
+  transition: all 1s;
+}
+
+img{
+  border: 0.5px solid lightgrey;
+  margin-top:auto;
+  margin-bottom: auto;
+  box-shadow: 17px 20px 20px 2px #4b4b4b87;
+  animation-delay: 1.7s;
+  animation: 2s ease-out 0s  alternate image ;
+}
+
+.img{
+  animation: 1s ease-in-out 0s alternate   img ;
+  animation-delay: 2.5s;
+}
+
+.p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size:0.2em;
+  margin-top: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  animation: 2s ease-out 0s  alternate text ;
+}
+
+footer > span {
+  font-size: 0.5em;
+  position: fixed;
+  bottom:0px;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+}
+
+
+/*********************************rwd*******************************/
+@media screen and ( min-width: 650px ){
+  .form{
+    flex-direction: row;
+    font-size:2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+    height: 100%;
+  }
+  .img{
+    width: 40%;
+    padding-bottom: auto;
+  }
+  .p{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+@media screen and( min-width: 1000px) {
+  .form2{
+    font-size: 2.2em;
+  }
+}
+
+/***********************animation*********************/  
+@keyframes form2{
+  0%{
+  transform: translateX(-1000px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes image{
+  0%{
+  transform: translateX(+1000px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes form{
+  0%{
+    background-color: rgb(0, 0, 0);
+    font-size: 0em;
+  }
+  50%{
+  font-size: 0em;
+  background-color: black;
+  }
+  100%{
+    font-size: 1em;
+  }
+}
+
+@keyframes img{
+  0%{
+    transform: rotate(-0deg);
+  }
+  10%{
+    transform:rotate(-15deg);
+  }
+  20%{
+    transform: rotate(15deg);
+  }
+  30%{
+    transform:rotate(-15deg);
+  }
+  40%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  60%{
+    transform:rotate(15deg);
+  }
+  70%{
+    transform: rotate(-15deg);
+  }
+  80%{
+    transform:rotate(+15deg);
+  }
+  90%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes text{
+  from{
+    color: white;
+    font-size: 500px;
+  }
+  to{
+    font-size: 0em;
+  }
+}

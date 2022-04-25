@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+html {
+  margin: 0px;
+}
+
+body {
+  background-image: url(../ressources/images/back.jpg);
+  background-size: cover;
+  margin: 0px;
+  background-repeat:no-repeat ;
+  background-attachment: fixed;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-width: 100%;
+  left: auto;
+  background-color: rgba(51, 51, 51, 0.336);
+  display: block;
+  z-index:20;
+}
+
+body > header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+body > header > nav > ul{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  padding-left: 0px;
+}
+
+body > header > nav > ul > li {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 0.6em;
+}
+
+body > header > nav > ul > li:hover {
+/*zoom au survole de la sourie*/
+  transition: all 150ms;
+  background-color: rgba(255, 255, 255, 0.774);
+  color: black;
+}
+a:hover{
+  color: black;
+}
+
+body > header > nav > ul > li > a {
+  color: white;
+}
+.title {
+  width: 100vw;
+}
+
+.redirection{
+  text-decoration: none;
+  }
+
+h1 {
+  height: 200px;
+  font-size: 2rem;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(131, 124, 124);
+  /*debut animation*/
+  animation-name: h1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+
+/*********** main **************/
+h2 {
+  text-align: center;
+  animation-name: h2;
+  animation-duration: 0.2s;
+  color: blueviolet;
+  font-size: 2em;
+}
+
+.boit_title{
+  box-shadow: 2px 10px 10px #00000066;
+  border-radius: 30%;
+  padding:30px;
+  top: 100px;
+}
+
+.p{
+  padding:20px;
+  text-align: justify;
+  background-color: rgba(117, 117, 117, 0.5);
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+
+body>main>div.loisir>.grid>.er>p{
+  text-align: center;
+  font-size:0.5em;
+}
+
+main{
+  display:flex;
+  flex-direction: column;
+  z-index:0;
+}
+
+.section{
+  margin-top:4em;
+  max-width: 1100px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+/*boite des photo*/
+article{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.452);
+  margin:10px;
+  padding: 10px;
+  border:20px;
+  max-width: 300px;
+  box-shadow: 2px 1px 5px black;
+  flex-direction:column;
+  height: 70vh;
+}
+
+.art>a>img.code{
+  width:100%;
+}
+
+.code{
+  max-width: 100%;
+}
+
+.imgcat{
+  clip-path: polygon(0 16%, 100% 16%, 100% 76%, 0 89%);
+  width: 100%;
+  margin-top:-29%;
+
+}
+
+.img{
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 91%);
+  background-color: beige;
+  width:100%;
+}
+
+.LienArticle{
+  position: absolute;
+}
+
+.music{ /*bouton des article lien entre les pages*/ 
+  width:80%;
+  text-align:center;
+  bottom: 20px;
+  position:absolute;
+  border: 1px solid black;
+  font-size: 1em;
+  padding:2%;
+  right:10px;
+  background-color: rgba(0, 0, 0, 0.301);
+  color:white;
+  border-radius: 10px 100px / 120px;
+  margin-right: 5px;
+}
+
+.music:hover{
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+a.music2:hover{/*zoom au survole de la sourie*/
+  color: black;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+.LienArticle:hover{
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+a {
+  transition: all 450ms;
+}
+  
+.boit2{ 
+  width:80%;
+  text-align:center;
+  position:absolute;
+  font-size: 1em;
+  padding-bottom: 0px;
+  right:10px;
+  margin-right: 5px;
+  bottom:2px;
+}
+
+.limusic2{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  top:2%;
+  bottom:2%;
+
+}
+
+.music2{
+  width:80%;
+  text-align:center;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  font-size: 1em;
+  padding:2%;
+  margin-right:10px;
+  background-color: rgba(0, 0, 0, 0.301);
+  color:white;
+  border-radius: 10px 100px / 120px;
+  margin-right: 5px;
+}
+
+.amusic2{
+  margin-bottom: 3px;
+}
+
+body>main>div>article .LienArticle>div>ul, li{
+  list-style: none;
+}
+
+body>main>div>article .LienArticle>div{
+right: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.LienMusic{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+}
+
+/*       peid de page       */
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(51, 51, 51, 0.756);
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  color: white;
+
+}
+
+footer>span ,a{
+  text-decoration: none;
+  color:white;
+}
+
+/*les annimation*/
+@keyframes h2{
+  0%{
+      font-size:0em;
+      color:rgba(255, 255, 255, 0.01)
+  }
+  100%{
+      color:blueviolet;
+  }
+}
+
+
+ @keyframes h1{
+    0%{
+      text-shadow: 5px 0px 5px rgb(255, 255, 255);  
+      color: white;
+
+    }
+   100%{
+      text-shadow: 2px 4px 20px  rgba(255, 255, 255, 0);
+    }
+  }
+/*fin de l'animation*/
+
+
+/*************RWD*************/
+
+@media screen and ( min-width: 600px) {
+  body > header > nav > ul > li > a {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+  
+  
+  
+  h1{
+    margin-right:30%;
+    font-size:4em;
+  }
+
+  .p{
+    margin-right: 10%;
+    margin-left: 10%;
+    max-width: 1000px;
+  }
+
+  .up>a>img{
+    width: 65px;
+    height: auto;
+  }
+   
+  .text{
+    display:flex;
+    width:100%;
+  }
+  
+  img{
+    max-width: 400px;
+  }
+
+  .section{
+    display:flex;
+    flex-direction:row;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  main{
+    align-content: center;
+  }    
+}
+
+@media screen and (min-width:1200px) {
+  body > header > nav > ul > li > a {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width:1700px) {
+  body > header > nav > ul > li > a {
+    font-size: 1.8em;
+  }
+  
+  .section{/*colle les <section> a gauche de l'ecran*/
+    margin-left: 320px;
+    margin-right: auto;
+  }
+}
+
+.up{/*bouton pour remonter en haut de la page*/
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.01);
+  z-index: 2;
+}
+
+.up>a>img{
+  width: 30px;
+  height: auto;
+}
+
+

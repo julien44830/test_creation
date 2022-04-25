@@ -1,0 +1,14 @@
+body{
+  color: lightblue;
+  background-color: grey;
+  text-align:center;
+  font-size: 4em;
+}
+
+p{
+  text-shadow: 0px 0px 5px white;
+}
+
+a{
+  text-decoration: none;
+}
